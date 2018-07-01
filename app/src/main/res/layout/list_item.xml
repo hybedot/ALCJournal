@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        <TextView
+            android:id="@+id/item_text_view_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="March 21, 2018"/>
+
+        <TextView
+            android:id="@+id/item_text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_text_view_date"
+            tools:text="Out for a bike" />
+
+        <TextView
+            android:id="@+id/item_text_view_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_text_view_title"
+            tools:text="the boy hshhshhs hhhs shshshshhshhshhs
+                        hdhdjdjdjdjdjdjdjdjdjdjdjjdddjdjjdjjdjdjdjdjdj
+                        jjfjfjfjfjfjfjfjfjfjfjfjfjjjfjjfjfjjfjjfjjfjjfjfjfj
+                        hfhfhfhfhfhf" />
+
+        <TextView
+            android:id="@+id/item_chip_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_text_view_message"
+            android:background="@drawable/shape_chip"
+            android:layout_margin="@dimen/chip_margin"
+            tools:text="happy"/>
+        <TextView
+            android:id="@+id/item_chip_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/item_chip_one"
+            android:layout_below="@id/item_text_view_message"
+            android:background="@drawable/shape_chip"
+            android:layout_margin="@dimen/chip_margin"
+            tools:text="moods"/>
+        <TextView
+            android:id="@+id/item_chip_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_text_view_message"
+            android:layout_toRightOf="@id/item_chip_two"
+            android:background="@drawable/shape_chip"
+            android:layout_margin="@dimen/chip_margin"
+            tools:text="happy"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
